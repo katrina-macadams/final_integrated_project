@@ -115,6 +115,7 @@ Couples Resort Responsive Build
     background: url(../images/hero-main.jpg) no-repeat;
     height: 200px;
  }
+
  
  .book-now {
     background-color: #9a2018;
@@ -442,3 +443,43 @@ Couples Resort Responsive Build
     line-height: 18px;
     font-size: 11px;
  }
+
+ /* Rooms CSS */
+
+/* Main Hero */
+#room_hero {
+   background: url(../images/rooms.jpg) no-repeat ;
+   height: 200px;
+   background-size: cover;
+   background-position: center;
+ }
+ 
+
+/* Chateaus */
+
+#chateaus {
+   padding-left: 0px;
+   padding-right: 30px;
+}
+
+#chateaus div img {
+   height: 176px;
+   width: 324px;
+   transform:scaleX(-1);
+}
+
+
+#chat_box {
+   background: rgb(255, 255, 255);
+   width: 314px;
+   height: 255px;
+   padding: 5px;
+   justify-items: start;
+   font-size: 14px;
+   position: absolute; 
+   margin-top: 130px;
+   margin-left: 51px;
+   border-style: solid;
+   border-color: red;
+}
+
