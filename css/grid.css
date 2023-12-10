@@ -17,13 +17,10 @@ body, p, h1, h2, h3, h4, h5 {
     display: grid;
     grid-template-columns: repeat(4, 73px);
     column-gap: 30px;
-    max-width: 412px;
+    max-width: 382px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    border-style: solid;
-    border-color: grey;
-    border-width: 3px;
  }
  
  .col-span-1	{grid-column: span 1 / span 1;}
