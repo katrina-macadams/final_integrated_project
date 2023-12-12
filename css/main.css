@@ -395,7 +395,20 @@ Couples Resort Responsive Build
     height: 250px;
  }
  
- 
+ @keyframes buttonScale {
+   0% {
+      transform: scale(1);
+      background-color: #9a2018;
+   }
+   50% {
+      transform: scale(1.1);
+      background-color: #9a2018;
+   }
+   100% {
+      transform: scale(1);
+      background-color: #9a2018;
+   }
+}
  
  #contact-hero-form input[type="submit"] {
     padding: 12px 28px;
@@ -403,13 +416,17 @@ Couples Resort Responsive Build
     color: #fff;
     border: none;
     transition: all 200ms ease-in;
+    cursor: pointer;
     width: 150px;
     align-self: flex-end;
+    animation: buttonScale 2s infinite;
  }
  
  #contact-hero-form input[type="submit"]:hover {
+   animation: none;
     background-color: #626262;
     border-radius: 0;
+    transform: scale(1.1);
  }
  
  
@@ -862,3 +879,570 @@ Couples Resort Responsive Build
    color: white;
    margin-left: 0px;
 }
+
+/* Dining CSS */ 
+
+/* Main Hero */
+
+#dining_hero {
+   background: url(../images/main_hero.jpg) no-repeat ;
+   height: 200px;
+   background-size: cover;
+   background-position: center;
+ }
+
+ /* Menu */
+
+ #menu_hero_con {
+   background: url(../images/gourmet.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 195px;
+ }
+ 
+ #menu_heading_box {
+    align-self: end;
+ }
+
+ 
+
+ /* Breakfast */
+
+ #break_con {
+   background: url(../images/breakfast.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 120px;
+   width: 145px;
+   margin: 2px;
+ }
+
+ 
+ #break_box {
+   padding: 4.5px 5px;
+   margin-bottom: 5px;
+   background-color: white;
+   font-size: 11px;
+   align-self: end;
+   cursor: pointer;
+ }
+
+ #break_box p {
+   text-decoration: underline;
+ }
+
+ #break_box a {
+   color: #9a2018;
+ }
+
+ #break_checkbox {
+   display: none; 
+}
+
+.menu_items {
+   display: none;
+}
+
+
+#break_checkbox:checked + #break_box {
+   height: 100px; 
+   width: 140px; 
+   background-color: white;
+   border-color: #CF6666;
+   border-width: 1px;
+   border-style: solid;
+   animation: ease-in 0.2s slide;
+}
+
+#break_checkbox:checked + #break_box .menu_items {
+   display: block;
+}
+
+@keyframes slide {
+   0% {
+      transform: scaleX(0);
+      transform-origin: left bottom;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: left bottom;
+    }
+ }
+
+#break_checkbox:focus,
+#break_checkbox:active
+#break_items:focus,
+#break_items:active {
+   outline: none; 
+}
+
+ 
+ /* Lunch */
+
+ #lunch_con {
+   background: url(../images/lunch.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 120px;
+   width: 145px;
+   margin: 2px;
+ }
+ 
+ #lunch_box {
+   padding: 4.5px 5px;
+   margin-bottom: 5px;
+   background-color: white;
+   font-size: 11px;
+   align-self: end;
+   cursor: pointer;
+ }
+
+ #lunch_box p {
+   text-decoration: underline;
+ }
+
+ #lunch_box a {
+   color: #9a2018;
+ }
+
+ #lunch_checkbox:checked + #lunch_box {
+   height: 100px; 
+   width: 140px; 
+   background-color: white;
+   border-color: #CF6666;
+   border-width: 1px;
+   border-style: solid;
+   animation: ease-in 0.2s slide;
+}
+
+#lunch_checkbox:checked + #lunch_box .menu_items {
+   display: block;
+}
+
+@keyframes slide {
+   0% {
+      transform: scaleX(0);
+      transform-origin: left bottom;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: left bottom;
+    }
+}
+
+#lunch_checkbox:focus,
+#lunch_checkbox:active
+#lunch_items:focus,
+#lunch_items:active {
+   outline: none; 
+}
+
+
+  /* Starters */
+
+  #start_con {
+   background: url(../images/starters.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 120px;
+   width: 145px;
+   margin: 2px;
+ }
+ 
+ #start_box {
+   padding: 4.5px 5px;
+   margin-bottom: 5px;
+   background-color: white;
+   font-size: 11px;
+   align-self: end;
+   cursor: pointer;
+ }
+
+ #start_box p {
+   text-decoration: underline;
+ }
+
+ #start_box a {
+   color: #9a2018;
+ }
+
+ #starters_checkbox:checked + #start_box {
+   height: 100px; 
+   width: 140px; 
+   background-color: white;
+   border-color: #CF6666;
+   border-width: 1px;
+   border-style: solid;
+   animation: ease-in 0.2s slide;
+}
+
+#starters_checkbox:checked + #start_box .menu_items {
+   display: block;
+}
+
+@keyframes slide {
+   0% {
+      transform: scaleX(0);
+      transform-origin: left bottom;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: left bottom;
+    }
+}
+
+#starters_checkbox:focus,
+#starters_checkbox:active
+#start_items:focus,
+#start_items:active {
+   outline: none; 
+}
+
+
+ /* Entrees */
+
+ #entre_con {
+   background: url(../images/entree.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 120px;
+   width: 145px;
+   margin: 2px;
+ }
+ 
+ #entre_box {
+   padding: 4.5px 5px;
+   margin-bottom: 5px;
+   background-color: white;
+   font-size: 11px;
+   align-self: end;
+   cursor: pointer;
+ }
+
+ #entree_box p {
+   text-decoration: underline;
+ }
+
+ #entree_box a {
+   color: #9a2018;
+ }
+
+ #entree_checkbox:checked + #entre_box {
+   height: 100px; 
+   width: 140px; 
+   background-color: white;
+   border-color: #CF6666;
+   border-width: 1px;
+   border-style: solid;
+   animation: ease-in 0.2s slide;
+}
+
+#entree_checkbox:checked + #entre_box .menu_items {
+   display: block;
+}
+
+
+@keyframes slide {
+   0% {
+      transform: scaleX(0);
+      transform-origin: left bottom;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: left bottom;
+    }
+}
+
+#entree_checkbox:focus,
+#entree_checkbox:active
+#entre_items:focus,
+#entre_items:active {
+   outline: none; 
+}
+
+
+ /* Drinks */
+
+ #drink_con {
+   background: url(../images/drinks.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 120px;
+   width: 145px;
+   margin: 2px;
+ }
+ 
+ #drink_box {
+   padding: 4.5px 5px;
+   margin-bottom: 5px;
+   background-color: white;
+   font-size: 11px;
+   align-self: end;
+   cursor: pointer;
+ }
+
+ #drink_box p {
+   text-decoration: underline;
+ }
+
+ #drink_box a {
+   color: #9a2018;
+ }
+
+ #drink_checkbox:checked + #drink_box {
+   height: 100px; 
+   width: 140px; 
+   background-color: white;
+   border-color: #CF6666;
+   border-width: 1px;
+   border-style: solid;
+   animation: ease-in 0.2s slide;
+}
+
+#drink_checkbox:checked + #drink_box .menu_items {
+   display: block;
+}
+
+
+@keyframes slide {
+   0% {
+      transform: scaleX(0);
+      transform-origin: left bottom;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: left bottom;
+    }
+}
+
+#drink_checkbox:focus,
+#drink_checkbox:active
+#drink_items:focus,
+#drink_items:active {
+   outline: none; 
+}
+
+
+ /* Desserts */
+
+ #desse_con {
+   background: url(../images/dessert.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 120px;
+   width: 145px;
+   margin: 2px;
+   cursor: pointer;
+ }
+ 
+ #desse_box {
+   padding: 4.5px 5px;
+   margin-bottom: 5px;
+   background-color: white;
+   font-size: 11px;
+   align-self: end;
+ }
+
+ #desse_box p {
+   text-decoration: underline;
+ }
+
+ #desse_box a {
+   color: #9a2018;
+ }
+
+ #dessert_checkbox:checked + #desse_box {
+   height: 100px; 
+   width: 140px; 
+   background-color: white;
+   border-color: #CF6666;
+   border-width: 1px;
+   border-style: solid;
+   animation: ease-in 0.2s slide;
+}
+
+#dessert_checkbox:checked + #desse_box .menu_items {
+   display: block;
+}
+
+@keyframes slide {
+   0% {
+      transform: scaleX(0);
+      transform-origin: left bottom;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: left bottom;
+    }
+}
+
+#dessert_checkbox:focus,
+#dessert_checkbox:active
+#desse_items:focus,
+#desse_items:active {
+   outline: none; 
+}
+
+
+ /* Daily Features */
+
+ #daily_con {
+   background: url(../images/daily.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 120px;
+   margin: 2px;
+   margin-bottom: 20px;
+   justify-items: center;
+ }
+ 
+ #daily_box {
+   padding: 4.5px 5px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   background-color: white;
+   font-size: 11px;
+   align-self: end;
+   cursor: pointer;
+ }
+
+ #daily_box p {
+   text-decoration: underline;
+ }
+
+ #daily_box a {
+   color: #9a2018;
+ }
+
+ #daily_checkbox:checked + #daily_box {
+   height: 100px; 
+   width: 374px;
+   background-color: white;
+   border-color: #CF6666;
+   border-width: 1px;
+   border-style: solid;
+   animation: ease-in 0.2s slide;
+}
+
+#daily_checkbox:checked + #daily_box .menu_items {
+   display: block;
+}
+
+@keyframes slide {
+   0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+}
+
+#daily_checkbox:focus,
+#daily_checkbox:active
+#daily_items:focus,
+#daily_items:active {
+   outline: none; 
+}
+
+
+ /* Chef Ronnie */
+
+ #ronnie_hero_con {
+    background: url(../images/ronnie.jpg) no-repeat;
+    height: 195px;
+    background-size: cover;
+    background-position: center;
+ }
+ 
+ #ronnie_heading_box {
+    align-self: end;
+ }
+ 
+ #ronnie_text {
+    padding-bottom: 60px;
+ }
+ 
+ #ronnie_text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 22px;
+ }
+
+ /* Video */
+
+ #video_hero_con {
+    background: url(../images/video.jpg) no-repeat;
+    height: 227px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    justify-items: center;
+    align-content: center;
+ }
+ 
+ .triangle1 {
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-left: 30px solid #838383;
+      border-bottom: 15px solid transparent;
+ }
+ 
+ #video_heading_box {
+   align-self: end;
+}
+
+#video_text {
+   padding-bottom: 60px;
+}
+
+#video_text p {
+   font-size: 14px;
+   margin-bottom: 20px;
+   line-height: 22px;
+}
+
+/* Wine Spectator */
+
+#wine_hero_con {
+   background: url(../images/couple_wine.jpg) no-repeat;
+   height: 195px;
+   background-size: cover;
+   background-position: center;
+}
+
+#wine_heading_box {
+   align-self: end;
+}
+
+#wine_text {
+   padding-bottom: 60px;
+}
+
+#wine_text p {
+   font-size: 14px;
+   margin-bottom: 20px;
+   line-height: 22px;
+}
+
+/* Reviews */
+
+#review_hero_con {
+   background: url(../images/review_couple.jpg) no-repeat;
+   height: 195px;
+   background-size: cover;
+   background-position: center;
+}
+
+#review_heading_box {
+   align-self: end;
+}
+
+.dot {
+   height: 8px;
+   width: 8px;
+   background-color:#CF6666;
+   border-radius: 50%;
+   display: inline-block;
+   margin-top: 20px;
+ }
