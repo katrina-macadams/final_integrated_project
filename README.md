@@ -36,9 +36,24 @@ Feel free to provide feedback and suggestions for future enhancements.
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 ## Credits
+**Design and Programming**
 Katrina MacAdams 
 k_macadams@fanshaweonline.ca
+
+> *Additonal Aid Provided By:* 
+Professors at Fanshawe College
+
+**Image Sources**
+Pexels Free Stock Images Website
+https://www.pexels.com/
+
+**Text & Other Resources**
+Couples Resort
+https://www.couplesresort.ca/index.php
+
 ## License
 MIT
+
+---
 
 </snippet>
