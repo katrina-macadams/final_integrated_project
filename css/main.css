@@ -386,7 +386,8 @@ Couples Resort Responsive Build
     border: 2px solid #d6d6d6;
     background-color: #f7f7f7;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top: 15px;
     font: inherit;
     width: auto;
  }
@@ -428,6 +429,22 @@ Couples Resort Responsive Build
     border-radius: 0;
     transform: scale(1.1);
  }
+  
+ #contact-hero-form input:invalid {
+   border: 2px solid #9a2018;
+ }
+    
+ #contact-hero-form input:invalid + span::before {
+   content: "Required";
+   color:#9a2018;
+ }
+    
+ #contact-hero-form input:valid + span::after {
+   content: "✓";
+   font-size: 25px;
+   color:darkolivegreen;
+ }
+    
  
  
  /* 8. ---Footer--- */
@@ -1425,6 +1442,7 @@ Couples Resort Responsive Build
    line-height: 22px;
 }
 
+
 /* Reviews */
 
 #review_hero_con {
@@ -1434,15 +1452,34 @@ Couples Resort Responsive Build
    background-position: center;
 }
 
+#review_quote_container {
+   display: grid;
+   overflow: hidden;
+  
+}
+
 #review_heading_box {
    align-self: end;
 }
 
-.dot {
-   height: 8px;
-   width: 8px;
-   background-color:#CF6666;
-   border-radius: 50%;
-   display: inline-block;
-   margin-top: 20px;
+q::before,
+q::after {
+  font-size: 24px;
+  color:#9a2018;
+}
+
+q::before {
+   content: open-quote;
  }
+ 
+ q::after {
+   content: close-quote;
+ }
+
+ .review_quote {
+   margin: 15px;
+ }
+
+
+
+
